@@ -1,0 +1,70 @@
+/* Body gradient animation background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+body.dark-mode {
+  background: linear-gradient(-45deg, #2c3e50, #4ca1af, #2c3e50, #4ca1af);
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { opacity: 1; transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #4a148c; /* darker purple */
+  transform: scale(1.05);
+}
+
+/* Root container to center content with padding */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Main section fade-in animation */
+main {
+  flex: 1;
+  animation: fadeIn 1s ease;
+}

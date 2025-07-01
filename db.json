@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+      { "id": 1, "item": "Casual Denim Jacket", "color": "Blue" },
+      { "id": 2, "item": "Formal Black Blazer", "color": "Black" },
+      { "id": 3, "item": "Summer Floral Dress", "color": "Red" }
+    ],
+    
+  
+  
+    "users": [],
+    "preferences": []
+  
+}
+  
